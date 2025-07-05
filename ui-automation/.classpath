@@ -37,5 +37,25 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/dilsh/.p2/pool/plugins/org.testng_7.11.0.r202503091654.jar" sourcepath="C:/Users/dilsh/.p2/pool/plugins/org.testng.source_7.11.0.r202503091654.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dilsh/.m2/repository/org/testng/testng/6.11/testng-6.11.jar" sourcepath="C:/Users/dilsh/.m2/repository/org/testng/testng/6.11/testng-6.11-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.testng"/>
+			<attribute name="maven.artifactId" value="testng"/>
+			<attribute name="maven.version" value="6.11"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/dilsh/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar" sourcepath="C:/Users/dilsh/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.relevantcodes"/>
+			<attribute name="maven.artifactId" value="extentreports"/>
+			<attribute name="maven.version" value="2.41.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/transmedia-ui-automation"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
