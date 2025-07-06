@@ -3,14 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.transmedia_ui.qa.testcases.BoardPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="testCreateBoard"/>
-          <include name="TestBase"/>
-        </methods>
-      </class> <!-- com.transmedia_ui.qa.testcases.BoardPageTest -->
       <class name="com.transmedia_ui.qa.testcases.HomePageTest">
         <methods>
           <include name="setup"/>

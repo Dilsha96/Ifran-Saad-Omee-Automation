@@ -2,7 +2,12 @@ package com.transmedia_ui.qa.testcases;
 
 import static org.testng.Assert.assertEquals;
 
+import java.time.Duration;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -31,7 +36,7 @@ public class HomePageTest extends TestBase{
        
     	boardPage=new BoardPage();
     	boardPage.clickCreateNewBoard();
-    	 homePage=new HomePage();
+    	homePage=new HomePage();
     	
     	
    
@@ -47,59 +52,58 @@ public class HomePageTest extends TestBase{
 
 
    
-       
-        
-    
-	
-	
+      
     @Test(priority = 1)
     public void testAddTwoLists() {
         System.out.println("===== Test: Add Two Lists =====");
-        homePage.listTitleInput(listTitle);
-        // Step 1: Generate first list name
         
+        
+        
+        //homePage.addList(listTitle);
         String list1 = "List One " + System.currentTimeMillis();
         String list2 = "List Two " + System.currentTimeMillis();
 
-        homePage.addList(list1);
-        System.out.println("Added list: " + list1);
+     // Add first list
+         System.out.println("Adding list: " + list1);
+         homePage.addList(list1);
+         System.out.println("✅ List added: " + list1);
+      // Assert.assertTrue(homePage.isListPresent(list1), "List1 should be present after creation");
 
+      // Add second list
+        System.out.println("Adding list: " + list2);
         homePage.addList(list2);
-        System.out.println("Added list: " + list2);
+        System.out.println("✅ List added: " + list2);
+       //Assert.assertTrue(homePage.isListPresent(list2), "List2 should be present after creation");
 
-       // int actualCount = homePage.getListCount();
-       // System.out.println("Total lists on UI: " + actualCount);
-
-       // Assert.assertEquals(actualCount, 2, "Expected 2 lists after adding.");
-    }
+        /// Validate the total number of lists
+        int actualCount = homePage.getListCount();
+        System.out.println("Total lists present: " + actualCount);
+        
+        
+        Assert.assertEquals(actualCount, 2, "Expected exactly 2 lists to exist.");
+        System.out.println("✅ Test Passed: Two lists were added successfully.");
+    
+    } 
+   	
     
 
-//        // Step 1: Create a unique list title
-//        
-//        System.out.println("Step 1: List title → " + listTitle);
-//        homePage.addList(listTitle);
-//
-//        // Step 2: Add the list
-//        System.out.println("Step 2: Enter title and click 'Add List'");
-//        homePage.addList(listTitle);
-//
-//   
-//
-//        // Step 3: Verify the list was added
-//        System.out.println("Step 3: Verifying list is present...");
-//        Assert.assertTrue(homePage.isListPresent(listTitle), "List was not added successfully.");
-//    }
-//		
 	
-//@Test(priority = 3, dependsOnMethods = "testAddTwoLists")
-@Test(priority = 3)
+@Test(priority = 2, dependsOnMethods = "testAddTwoLists")
+
 public void testDeleteOneList() 
 // Step 3: Delete one list
 {
-  boardPage.deleteFirstList();
-  assertEquals(1, boardPage.getListCount(), "List count should be 1 after deleting one list.");
-}
+  
+  homePage.deleteFirstList();
+  assertEquals(1, homePage.getListCount(), "List count should be 1 after deleting one list.");
 }
     
+    
+    
+@AfterMethod
+public void teardown() {
+    driver.quit();
+}
+}   
 
 

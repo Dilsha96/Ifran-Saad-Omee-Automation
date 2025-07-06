@@ -1,29 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-05T22:05:10 IST" name="Default suite" finished-at="2025-07-05T22:05:16 IST" duration-ms="5377">
+  <suite started-at="2025-07-06T21:30:31 IST" name="Default suite" finished-at="2025-07-06T21:31:11 IST" duration-ms="40365">
     <groups>
     </groups>
-    <test started-at="2025-07-05T22:05:10 IST" name="Default test" finished-at="2025-07-05T22:05:16 IST" duration-ms="5377">
+    <test started-at="2025-07-06T21:30:31 IST" name="Default test" finished-at="2025-07-06T21:31:11 IST" duration-ms="40365">
       <class name="com.transmedia_ui.qa.testcases.BoardPageTest">
-        <test-method is-config="true" signature="TestBase()[pri:0, instance:com.transmedia_ui.qa.testcases.BoardPageTest@4c309d4d]" started-at="2025-07-05T22:05:10 IST" name="TestBase" finished-at="2025-07-05T22:05:10 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="TestBase()[pri:0, instance:com.transmedia_ui.qa.testcases.BoardPageTest@dd0c991]" started-at="2025-07-06T21:30:31 IST" name="TestBase" finished-at="2025-07-06T21:30:31 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestBase -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.transmedia_ui.qa.testcases.BoardPageTest@4c309d4d]" started-at="2025-07-05T22:05:10 IST" name="setup" finished-at="2025-07-05T22:05:14 IST" duration-ms="3837" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.transmedia_ui.qa.testcases.BoardPageTest@dd0c991]" started-at="2025-07-06T21:30:31 IST" name="setup" finished-at="2025-07-06T21:30:34 IST" duration-ms="3346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateBoard()[pri:1, instance:com.transmedia_ui.qa.testcases.BoardPageTest@4c309d4d]" started-at="2025-07-05T22:05:14 IST" name="testCreateBoard" finished-at="2025-07-05T22:05:15 IST" duration-ms="1245" status="PASS">
+        <test-method signature="testCreateBoard()[pri:1, instance:com.transmedia_ui.qa.testcases.BoardPageTest@dd0c991]" started-at="2025-07-06T21:30:34 IST" name="testCreateBoard" finished-at="2025-07-06T21:30:36 IST" duration-ms="1575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateBoard -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.transmedia_ui.qa.testcases.BoardPageTest@4c309d4d]" started-at="2025-07-05T22:05:15 IST" name="teardown" finished-at="2025-07-05T22:05:16 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.transmedia_ui.qa.testcases.BoardPageTest@dd0c991]" started-at="2025-07-06T21:30:36 IST" name="teardown" finished-at="2025-07-06T21:30:36 IST" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.transmedia_ui.qa.testcases.BoardPageTest -->
+      <class name="com.transmedia_ui.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="TestBase()[pri:0, instance:com.transmedia_ui.qa.testcases.HomePageTest@4ef37659]" started-at="2025-07-06T21:30:36 IST" name="TestBase" finished-at="2025-07-06T21:30:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBase -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.transmedia_ui.qa.testcases.HomePageTest@4ef37659]" started-at="2025-07-06T21:30:36 IST" name="setup" finished-at="2025-07-06T21:30:40 IST" duration-ms="4087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddTwoLists()[pri:1, instance:com.transmedia_ui.qa.testcases.HomePageTest@4ef37659]" started-at="2025-07-06T21:30:40 IST" name="testAddTwoLists" finished-at="2025-07-06T21:31:11 IST" duration-ms="30908" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (7144d1bd25982b6f817c414aa4f25850)] -> xpath: //button[@style="width: fit-content;"]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\dilsh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:12532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:12532/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7144d1bd25982b6f817c414aa4f25850]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on windows (7144d1bd25982b6f817c414aa4f25850)] -> xpath: //button[@style="width: fit-content;"]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\dilsh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:12532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:12532/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7144d1bd25982b6f817c414aa4f25850
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.transmedia_ui.qa.pages.HomePage.addList(HomePage.java:89)
+at com.transmedia_ui.qa.testcases.HomePageTest.testAddTwoLists(HomePageTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTwoLists -->
+        <test-method signature="testDeleteOneList()[pri:2, instance:com.transmedia_ui.qa.testcases.HomePageTest@4ef37659]" started-at="2025-07-06T21:31:11 IST" name="testDeleteOneList" finished-at="2025-07-06T21:31:11 IST" depends-on-methods="com.transmedia_ui.qa.testcases.HomePageTest.testAddTwoLists" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.transmedia_ui.qa.testcases.HomePageTest.testDeleteOneList() on instance com.transmedia_ui.qa.testcases.HomePageTest@4ef37659 depends on not successfully finished methods 
+[com.transmedia_ui.qa.testcases.HomePageTest.testAddTwoLists() on instance com.transmedia_ui.qa.testcases.HomePageTest@4ef37659]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.transmedia_ui.qa.testcases.HomePageTest.testDeleteOneList() on instance com.transmedia_ui.qa.testcases.HomePageTest@4ef37659 depends on not successfully finished methods 
+[com.transmedia_ui.qa.testcases.HomePageTest.testAddTwoLists() on instance com.transmedia_ui.qa.testcases.HomePageTest@4ef37659]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteOneList -->
+      </class> <!-- com.transmedia_ui.qa.testcases.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

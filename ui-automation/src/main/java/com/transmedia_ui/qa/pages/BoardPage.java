@@ -82,68 +82,7 @@ public class BoardPage  extends TestBase{
 
 
 	
-//---
-	
-//	public boolean isBoardCreated(String boardName) {
-//	    try {
-//	        WebElement BoardTitle = driver.findElement(
-//	            By.xpath("//*[contains(text(), '" + boardName + "')]")
-//	        );
-//	        return BoardTitle.isDisplayed();
-//	    } catch (NoSuchElementException e) {
-//	        return false;
-//	    }
-	
 
-//	public void addList(String listTitle) {
-//	    WebElement inputField = driver.findElement(By.xpath("//input[@placeholder='Enter list title']"));
-//	    inputField.clear();
-//	    inputField.sendKeys(listTitle);
-//
-//	    WebElement addButton = driver.findElement(By.xpath("//input[@value='Add List']"));
-//	    addButton.click();
-//	}
-
-	
-
-	
-//	public boolean isBoardDisplayed(String boardName) {
-//	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//	    try {
-//	    	
-//	        WebElement boardTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(
-//	            By.xpath("//*[contains(text(),'" + boardName + "')]")));
-//	        return boardTitle.isDisplayed();
-//	    } catch (Exception e) {
-//	        return false;
-//	    }
-//	}
-//	public boolean isBoardDisplayed(String boardName) {
-//	    try {
-//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//	        return wait.until(ExpectedConditions.visibilityOfElementLocated(
-//	            By.xpath("//*[contains(text(),'" + boardName + "')]")
-//	        )).isDisplayed();
-//	    } catch (Exception e) {
-//	        System.out.println("Board not found after wait: " + boardName);
-//	        return false;
-//	    }
-//	}
-	
-	
-	
-	// Method to check if board is created successfully
-//    public boolean isBoardCreated(String boardName) {
-//        try {
-//            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//            return wait.until(ExpectedConditions.visibilityOfElementLocated(
-//                    By.xpath("//*[contains(text(),'" + boardName + "')]")
-//            )).isDisplayed();
-//        } catch (Exception e) {
-//            System.out.println("Board not visible: " + boardName);
-//            return false;
-//        }
-//    }
 	
 	public boolean isBoardCreated(String boardName) {
         try {
@@ -169,11 +108,7 @@ public class BoardPage  extends TestBase{
 		return null;
 	}
 
-	public void deleteFirstList() {
-		
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	
 	
