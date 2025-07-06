@@ -8,6 +8,7 @@
           <include name="setup"/>
           <include name="testAddTwoLists"/>
           <include name="TestBase"/>
+          <include name="teardown"/>
           <include name="testDeleteOneList"/>
         </methods>
       </class> <!-- com.transmedia_ui.qa.testcases.HomePageTest -->

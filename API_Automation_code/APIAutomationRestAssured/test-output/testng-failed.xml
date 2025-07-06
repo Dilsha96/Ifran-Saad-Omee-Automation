@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.transmedia_ui.qa.testcases.HomePageTest">
+      <class name="Ifran_Saad_Omee_API.APIAutomationRestAssured.DeleteList">
         <methods>
-          <include name="setup"/>
-          <include name="testAddTwoLists"/>
-          <include name="TestBase"/>
-          <include name="teardown"/>
-          <include name="testDeleteOneList"/>
+          <include name="testDeleteList"/>
         </methods>
-      </class> <!-- com.transmedia_ui.qa.testcases.HomePageTest -->
+      </class> <!-- Ifran_Saad_Omee_API.APIAutomationRestAssured.DeleteList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
